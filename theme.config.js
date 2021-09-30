@@ -58,7 +58,6 @@ export default {
     </>
   ),
   defaultMenuCollapsed: false,
-  darkMode: true,
   search: true,
   prevLinks: true,
   nextLinks: true,
