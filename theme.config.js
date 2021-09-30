@@ -1,12 +1,12 @@
 export default {
-  repository: 'https://github.com/TamaTamaGoGo/vercel-utamake-docs',
-  docsRepository: 'https://github.com/TamaTamaGoGo/vercel-utamake-docs',
-  titleSuffix: ' – UtamakePages',
+  repository: 'https://github.com/TamaTamaGoGo/vercel-utamake-wikiportal',
+  docsRepository: 'https://github.com/TamaTamaGoGo/vercel-utamake-wikiportal',
+  titleSuffix: ' – UtamakeWikiPortal',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">UtamakePages</span>
+      <span className="mr-2 font-extrabold hidden md:inline">UtamakeWikiPortal</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        Official pages of Utamake World
+        not single wiki!
       </span>
     </>
   ),
@@ -16,15 +16,15 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="jp" />
-      <meta name="description" content="UtamakePages: UtamakePages is official wiki of utamake world." />
-      <meta name="og:description" content="UtamakePages: UtamakePages is official wiki of utamake world" />
+      <meta name="description" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world." />
+      <meta name="og:description" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://raw.githubusercontent.com/TamaTamaGoGo/vercel-utamake-docs/main/public/UtamakePages.png?raw=true" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/TamaTamaGoGo/vercel-utamake-wikiportal/main/public/UtamakePages.png?raw=true" />
       <meta name="twitter:site:domain" content="utamake.minecraftr.us" />
       <meta name="twitter:url" content="https://utamake.minecraftr.us" />
-      <meta name="og:title" content="UtamakePages: UtamakePages is official wiki of utamake world." />
+      <meta name="og:title" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world." />
       <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="UtamakePages" />
+      <meta name="apple-mobile-web-app-title" content="UtamakeWikiPortal" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
