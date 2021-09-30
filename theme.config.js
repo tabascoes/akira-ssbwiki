@@ -57,7 +57,8 @@ export default {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     </>
   ),
-  defaultMenuCollapsed: true,
+  defaultMenuCollapsed: false,
+  darkMode: true,
   search: true,
   prevLinks: true,
   nextLinks: true,
