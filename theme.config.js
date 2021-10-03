@@ -66,7 +66,7 @@ export default {
   footerEditOnGitHubText: 'See/Edit on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
   i18n: [
-    { locale: 'en', text: 'English' },
     { locale: 'jp', text: '日本語' },
+    { locale: 'en', text: 'English' },
   ]
 }
