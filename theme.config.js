@@ -1,12 +1,12 @@
 export default {
-  repository: 'https://github.com/TamaTamaGoGo/vercel-utamake-wikiportal',
-  docsRepository: 'https://github.com/TamaTamaGoGo/vercel-utamake-wikiportal',
-  titleSuffix: ' – UtamakeWikiPortal',
+  repository: 'https://github.com/tabascoes/akira-ssbwiki',
+  docsRepository: 'https://github.com/tabascoes/akira-ssbwiki',
+  titleSuffix: ' – SSBWiki',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">UtamakeWikiPortal</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        not single wiki!
+        For beginner to senior
       </span>
     </>
   ),
@@ -16,15 +16,15 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="jp" />
-      <meta name="description" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world." />
-      <meta name="og:description" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world" />
+      <meta name="description" content="SSBWiki: UtamakeWikiPortal is official wiki of utamake world." />
+      <meta name="og:description" content="SSBWiki: UtamakeWikiPortal is official wiki of utamake world" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://raw.githubusercontent.com/TamaTamaGoGo/vercel-utamake-wikiportal/main/public/UtamakePages.png?raw=true" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/tabascoes/akira-ssbwiki/main/public/UtamakePages.png?raw=true" />
       <meta name="twitter:site:domain" content="utamake.minecraftr.us" />
       <meta name="twitter:url" content="https://utamake.minecraftr.us" />
-      <meta name="og:title" content="UtamakeWikiPortal: UtamakeWikiPortal is official wiki of utamake world." />
+      <meta name="og:title" content="SSBWiki: UtamakeWikiPortal is official wiki of utamake world." />
       <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="UtamakeWikiPortal" />
+      <meta name="apple-mobile-web-app-title" content="SSBWiki" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -65,4 +65,8 @@ export default {
   footerEditOnGitHubLink: true,
   footerEditOnGitHubText: 'See/Edit on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  i18n: [
+    { locale: 'en', text: 'English' },
+    { locale: 'jp', text: '日本語' },
+  ]
 }
