@@ -1,7 +1,7 @@
 name: Vercel Action
 on: 
   push:
-    branches: [main]
+    branches: []
     
 jobs:
   deploy:
