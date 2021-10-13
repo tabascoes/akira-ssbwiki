@@ -1,0 +1,24 @@
+import { useSSG } from 'nextra/ssg'
+
+export const getStaticProps = ({ params }) => {
+  return fetch(`https://api.github.com/repos/tabascoes/next-ssbwiki/commits?path=/pages/sandbox/edittime.jp.mdx`)
+    .then((res) => res.json())
+    .then((repo) => ({
+      props: {
+        // We add an `ssg` field to the page props,
+        // which will be provided to the Nextra `useSSG` hook.
+        ssg: {
+          lastmodified: repo.commit.date,
+        },
+      },
+      // The page will be considered as stale and regenerated every 60 seconds.
+      revalidate: 60,
+    }))
+}
+
+export const Lastmodified = () => {
+  // Get the data from SSG, and render it as a component.
+  const { lastmodified } = useSSG()
+  return <strong>{lastmodified}</strong>
+}
+Nextra has <lastmodified /> stars on GitHub!
