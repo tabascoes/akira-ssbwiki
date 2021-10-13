@@ -8,8 +8,8 @@ export const getStaticProps = ({ params }) => {
         // We add an `ssg` field to the page props,
         // which will be provided to the Nextra `useSSG` hook.
         ssg: {
-          lastmodified: repo.commit.date,
-          lastmodifiedperson: repo.commit.name,
+          lastmodified: commit.date,
+          lastmodifiedperson: commit.name,
         },
       },
       // The page will be considered as stale and regenerated every 60 seconds.
