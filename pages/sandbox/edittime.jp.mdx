@@ -9,6 +9,7 @@ export const getStaticProps = ({ params }) => {
         // which will be provided to the Nextra `useSSG` hook.
         ssg: {
           lastmodified: repo.commit.date,
+          lastmodifiedperson: repo.commit.name,
         },
       },
       // The page will be considered as stale and regenerated every 60 seconds.
@@ -21,4 +22,11 @@ export const Lastmodified = () => {
   const { lastmodified } = useSSG()
   return <strong>{lastmodified}</strong>
 }
-Nextra has <lastmodified /> stars on GitHub!
+
+export const Lastmodifiedperson = () => {
+  // Get the data from SSG, and render it as a component.
+  const { lastmodifiedperson } = useSSG()
+  return <strong>{lastmodifiedperson}</strong>
+}
+
+このページは <Lastmodified /> が <Lastmodifiedperson /> に編集しました。
