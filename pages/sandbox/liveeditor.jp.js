@@ -9,9 +9,16 @@ const components = {
     code: CodeBlock
 }
 
+function getelement() {
+  if (typeof document !== 'undefined') {
+      //クッキーに値をセット
+    document.getElementById("root")
+  }
+}
+
 render(
     <MDXProvider components={components}>
         <Doc />
     </MDXProvider>,
-    document.getElementById("root")
+    getelement()
 )
