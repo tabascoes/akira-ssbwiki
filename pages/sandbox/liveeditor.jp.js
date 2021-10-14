@@ -9,16 +9,14 @@ const components = {
     code: CodeBlock
 }
 
-function getelement() {
-  if (typeof document !== 'undefined') {
-      //クッキーに値をセット
-    return document.getElementById("root")
-  }
-}
-
 render(
     <MDXProvider components={components}>
         <Doc />
     </MDXProvider>,
-    getelement()
+    !function (){
+        if (typeof document !== 'undefined') {
+            //クッキーに値をセット
+          return document.getElementById("root")
+        }
+    }
 )
