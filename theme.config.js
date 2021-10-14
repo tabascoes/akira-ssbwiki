@@ -58,8 +58,8 @@ export default {
     </>
   ),
   defaultMenuCollapsed: true,
-  floatTOC: false,
-  font: false,
+  floatTOC: true,
+  font: true,
   search: true,
   prevLinks: true,
   nextLinks: true,
@@ -70,5 +70,6 @@ export default {
   i18n: [
     { locale: 'jp', text: '日本語' },
     { locale: 'en', text: 'English' },
-  ]
+  ],
+  unstable_faviconGlyph: '📝',
 }
