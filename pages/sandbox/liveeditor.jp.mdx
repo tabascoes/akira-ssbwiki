@@ -1,0 +1,17 @@
+import React from "react"
+import {render} from "react-dom"
+import {MDXProvider} from "@mdx-js/react"
+
+import Doc from "./temp.mdx"
+import CodeBlock from "/src/codeblock"
+
+const components = {
+    code: CodeBlock
+}
+
+render(
+    <MDXProvider components={components}>
+        <Doc />
+    </MDXProvider>,
+    document.getElementById("root")
+)
