@@ -58,7 +58,7 @@ export default {
     </>
   ),
   defaultMenuCollapsed: true,
-  floatTOC: true,
+  floatTOC: false,
   font: false,
   search: true,
   prevLinks: true,
