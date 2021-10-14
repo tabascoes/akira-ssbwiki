@@ -12,7 +12,7 @@ const components = {
 function getelement() {
   if (typeof document !== 'undefined') {
       //クッキーに値をセット
-    document.getElementById("root")
+    return document.getElementById("root")
   }
 }
 
