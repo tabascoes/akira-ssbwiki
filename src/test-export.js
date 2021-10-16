@@ -1,3 +1,3 @@
-export function time(x, y) {
+function time(x, y) {
   return x * y;
 }
